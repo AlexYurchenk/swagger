@@ -37,7 +37,7 @@ const {
  *          type: Date
  *          description:  The Date when the book was created
  *        favorite:
- *          type: boole
+ *          type: boolean
  *          description:  The boole which shows, is this book favorite or not
  *      example:
  *        _id:  625158d179da910b3b1e700a
@@ -71,7 +71,7 @@ const {
  *                  types:  string
  *                  description:  The status of operation
  *                code:
- *                  types:  number
+ *                  type:  number
  *                  description:  The status code
  *                data:
  *                  types:  object
@@ -114,7 +114,7 @@ router.get('/', getBooks);
  *                  types:  string
  *                  description:  The status of operation
  *                code:
- *                  types:  number
+ *                  type:  number
  *                  description:  The status of operation
  *                message:
  *                  types:  string
@@ -148,7 +148,7 @@ router.get('/:id', getBookById);
  *                  types:  string
  *                  description:  The status of operation
  *                code:
- *                  types:  number
+ *                  type:  number
  *                  description:  The status of operation
  *
  *      "404":
@@ -162,7 +162,7 @@ router.get('/:id', getBookById);
  *                  types:  string
  *                  description:  The status of operation
  *                code:
- *                  types:  number
+ *                  type:  number
  *                  description:  The status of operation
  *                message:
  *                  types:  string
@@ -191,7 +191,7 @@ router.delete('/:id', removeBook);
  *                types:  string
  *                description:  The book author
  *              favorite:
- *                types:  boole
+ *                type: boolean
  *                description:  The boole which shows, is this book favorite or not
  *    responses:
  *      "201":
@@ -205,7 +205,7 @@ router.delete('/:id', removeBook);
  *                  types:  string
  *                  description:  The status of operation
  *                code:
- *                  types:  number
+ *                  type:  number
  *                  description:  The status of operation
  *                data:
  *                  types:  object
@@ -224,7 +224,7 @@ router.delete('/:id', removeBook);
  *                  types:  string
  *                  description:  The status of operation
  *                code:
- *                  types:  number
+ *                  type:  number
  *                  description:  The status of operation
  *                message:
  *                  types:  string
@@ -260,7 +260,7 @@ router.post('/', addBook);
  *                types:  string
  *                description:  The book author
  *              favorite:
- *                types:  boole
+ *                type: boolean
  *                description:  The boole which shows, is this book favorite or not
  *    responses:
  *      "200":
@@ -274,7 +274,7 @@ router.post('/', addBook);
  *                  types:  string
  *                  description:  The status of operation
  *                code:
- *                  types:  number
+ *                  type:  number
  *                  description:  The status of operation
  *                data:
  *                  types:  object
@@ -293,7 +293,7 @@ router.post('/', addBook);
  *                  types:  string
  *                  description:  The status of operation
  *                code:
- *                  types:  number
+ *                  type:  number
  *                  description:  The status of operation
  *                message:
  *                  types:  string
@@ -309,7 +309,7 @@ router.post('/', addBook);
  *                  types:  string
  *                  description:  The status of operation
  *                code:
- *                  types:  number
+ *                  type:  number
  *                  description:  The status of operation
  *                message:
  *                  types:  string
